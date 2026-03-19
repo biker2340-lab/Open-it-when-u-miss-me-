@@ -1,0 +1,19 @@
+/* same reset as before */
+
+#heart-container { /* floating hearts */ }
+.heart { /* same as before */ }
+@keyframes float { /* same as before */ }
+
+.page { display: none; text-align: center; padding-top: 80px; transition: all 0.5s ease;}
+.page.active { display: block; animation: fadeIn 1s ease; }
+@keyframes fadeIn { from {opacity:0;} to {opacity:1;} }
+
+button {
+    padding: 10px 20px; margin: 15px; font-size: 18px; border: none; border-radius: 10px;
+    cursor: pointer; transition: all 0.3s ease; background: pink; color: white;
+}
+button:hover { transform: scale(1.1); background: #ff6699; }
+
+/* Mini challenge area */
+#challenge-area { margin-top:30px; min-height:200px; position: relative; }
+.click-item { width:50px; height:50px; background:yellow; border-radius:50%; position:absolute; cursor:pointer; }
